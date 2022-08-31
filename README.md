@@ -4,14 +4,5 @@ There is a CPU version based on the fast improved Gauss transform (FIG), that ha
 In addition, there is a code that does not the FIG-transform, but divides the kernel into blocks. This code can run on CPU/GPU.
 Note, that the code uses the matrix-multiplication for computing the distances using (torch.cdist), which in some cases might produce results which are not very accurate. This option can be changed inside the code, but it will run slower.
 
-
-@article{shabat2021fast,\\
-  title={Fast and accurate Gaussian kernel ridge regression using matrix decompositions for preconditioning},\\
-  author={Shabat, Gil and Choshen, Era and Or, Dvir Ben and Carmel, Nadav},\\
-  journal={SIAM Journal on Matrix Analysis and Applications},\\
-  volume={42},\\
-  number={3},\\
-  pages={1073--1095},\\
-  year={2021},\\
-  publisher={SIAM}\\
-}
+The code is based on the following paper:
+G. Shabat, E. Choshen, D. Ben Or, N. Carmel; "Fast and accurate Gaussian kernel ridge regression using matrix decompositions for preconditioning" SIAM Journal on Matrix Analysis and Applications, 42(3), pp. 1073--1095, 2021.
